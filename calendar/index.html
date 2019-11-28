@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+</head>
+
+<body>
+
+  <div id="app">
+      <input class='input'/>
+      <input class='input1'/>
+      <input class='input2'/>
+  </div>
+
+  <script src='./build/calendar.js'></script>
+  <script>
+    new Calendar('.input', {
+      special: {
+        '0126': 'happy',
+        '0526': 'new',
+        '1208': 'year',
+      }
+    })
+    new Calendar('.input1', {
+      special: {
+        '1126': 'happy',
+        '1026': 'new',
+        '1108': 'year',
+      }
+    })
+    new Calendar('.input2', {
+      special: {
+        '1128': 'happy',
+        '1026': 'new',
+        '1108': 'year',
+      }
+    })
+  </script>
+</body>
+
+</html>
